@@ -81,11 +81,27 @@ module.exports = class BotClass {
    * @param {String} input The text message you want to send
    */
   replytext(input) {
+    await this.client.sendMessage(this.from, {
+      text: input,
+      quoted: this.reply,
+      detectLinks: false,
+    });
+
     this.client.sendMessage(this.from, input, MessageType.text, {
       quoted: this.reply,
       detectLinks: false,
     });
   }
+
+ async replyMessage(input) {
+    const { text }
+     await this.client.sendMessage(this.from, {
+      text: input,
+      quoted: this.reply,
+      detectLinks: false,
+    });
+  }
+
 
   /**
    * This function is used to send a text message without tagging the command.
@@ -140,35 +156,29 @@ module.exports = class BotClass {
    */
   async replyvideo(path, caption, thumb) {
     if (thumb != null) {
-      await this.client.sendMessage(
-        this.from,
-        fs.readFileSync(path),
-        MessageType.video,
-        {
+      await this.client
+        .sendMessage(this.from, fs.readFileSync(path), MessageType.video, {
           quoted: this.reply,
           caption: caption,
           mimetype: Mimetype.mp4,
           detectLinks: false,
           thumbnail: fs.readFileSync(thumb),
-        }
-      ).then(() => {
-        fs.unlinkSync(path);
-        fs.unlinkSync(thumb);
-      });
+        })
+        .then(() => {
+          fs.unlinkSync(path);
+          fs.unlinkSync(thumb);
+        });
     } else {
-      await this.client.sendMessage(
-        this.from,
-        fs.readFileSync(path),
-        MessageType.video,
-        {
+      await this.client
+        .sendMessage(this.from, fs.readFileSync(path), MessageType.video, {
           quoted: this.reply,
           caption: caption,
           mimetype: Mimetype.mp4,
           detectLinks: false,
-        }
-      ).then(() => {
-        fs.unlinkSync(path);
-      });
+        })
+        .then(() => {
+          fs.unlinkSync(path);
+        });
     }
   }
 

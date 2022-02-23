@@ -80,7 +80,7 @@ module.exports = class BotClass {
    * This function is used to send a text message tagging the command.
    * @param {String} input The text message you want to send
    */
-  replytext(input) {
+  async replytext(input) {
     await this.client.sendMessage(this.from, {
       text: input,
       quoted: this.reply,
@@ -93,15 +93,13 @@ module.exports = class BotClass {
     });
   }
 
- async replyMessage(input) {
-    const { text }
-     await this.client.sendMessage(this.from, {
+  async replyMessage(input) {
+    await this.client.sendMessage(this.from, {
       text: input,
       quoted: this.reply,
       detectLinks: false,
     });
   }
-
 
   /**
    * This function is used to send a text message without tagging the command.
@@ -117,8 +115,8 @@ module.exports = class BotClass {
    *This function is used to send a sticker message
    * @param {String} path The absolute sticker path
    */
-  replysticker(path) {
-    this.client.sendMessage(
+  async replysticker(path) {
+    await this.client.sendMessage(
       this.from,
       fs.readFileSync(path),
       MessageType.sticker,

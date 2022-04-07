@@ -1,30 +1,30 @@
 {
-  "salutations": ["👋 ```Hey```", "👋 ```Hello```", "👋 ```hi```"],
-  "disabled": "😢 ```Feature down```",
-  "success": "✅ ```Successful```",
-  "noenv": "🛠️ ```Environment variable not set.```",
-  "noapi": "🔑  ```API key not set```",
-  "tag": "🌌 ```Reply to a media.```",
-  "tags": "🌌 ```Reply to a sticker.```",
-  "tagtext": "📑 ```Reply to a text.```",
-  "grouplimit": "🎫 ```Daily group credits exhausted.```",
-  "userlimit": "💳 ```Daily credits exhausted.```",
-  "limit": "💳 ```Daily credit used: ```",
-  "unknowncommand": "🤖 ```Invalid command```",
+  "salutations": ["👋 ```Hey```", "👋 ```Ciao```", "👋 ```hi```"],
+  "disabled": "😢 ```Caratteristica```",
+  "success": "✅ ```Riuscito```",
+  "noenv": "🛠️ ```Variabile d'ambiente non impostata.```",
+  "noapi": "🔑  ```Chiave API non impostata```",
+  "tag": "🌌 ```Rispondi ad un media.```",
+  "tags": "🌌 ```Rispondi ad un adesivo.```",
+  "tagtext": "📑 ```Rispondi ad un testo.```",
+  "grouplimit": "🎫 ```Crediti di gruppo giornalieri esauriti.```",
+  "userlimit": "💳 ```Crediti giornalieri esauriti.```",
+  "limit": "💳 ```Credito giornaliero utilizzato: ```",
+  "unknowncommand": "🤖 ```Comando non valido```",
 
   "error": {
-    "invalid": "🌐 ```Invalid link```",
-    "error": "❎ ```Error```"
+    "invalid": "🌐 ```Collegamento non valido```",
+    "error": "❎ ```Errore```"
   },
 
   "only": {
-    "group": "👩‍👩‍👦‍👦 ```This command can only be used in groups!```",
-    "ownerG": "💎 ```This command can only be used by the group owner!```",
-    "ownerB": "🎩 ```This command can only be used by the bot owner!```",
-    "modB": "👮 ```This command can only be used by the bot moderators!```",
-    "admin": "🛡️ ```This command can only be used by the admins!```",
-    "Badmin": "🤖 ```This command can only be used when the bot is admin!```"
+    "group": "👩‍👩‍👦‍👦 ```Questo comando può essere utilizzato solo nei gruppi!```",
+    "ownerG": "💎 ```Questo comando può essere utilizzato solo dal proprietario del gruppo!```",
+    "ownerB": "🎩 ```Questo comando può essere utilizzato solo dal proprietario del bot!```",
+    "modB": "👮 ```Questo comando può essere utilizzato solo dai moderatori del bot!```",
+    "admin": "🛡️ ```Questo comando può essere utilizzato solo dagli amministratori!```",
+    "Badmin": "🤖 ```Questo comando può essere utilizzato solo quando il bot è admin!```"
   },
 
-  "initialSetup":  "🤖 *AKM WHATSAPP BOT Integrated Successfully!* \n \n ❗*Here are the few commands only you can run to manage the bot-*\n👨‍👨‍👧‍👦*dgl* : ```Change daily user limit```\n\n👦*dul* : ```Change daily group limit```\n👨‍👨‍👧‍👦*mgs* : ```Change the minimum participants required for bot to work in group```\n🕛*rst* : ```Reset the daily group and user credit back to 0```\n💾*sql* : ```Perform sql command on the bot databse```\n👮‍♀️*mdr* : ```Add a user as a bot moderator```\n❎*rmdr*: ```Remove a user as a bot moderator```\n🟢*rtrt*: ```Restart the bot server```\n🔴*stp* : ```Shutdown the bot```"
+  "initialSetup":  "🤖 *HOLLOW BOT Integrato con successo!* \n \n ❗*Ecco i pochi comandi che solo tu puoi usare per gestire il bot-*\n👨‍👨‍👧‍👦*dgl* : ```Cambia il limite giornaliero di utenti```\n\n👦*dul* : ```Cambia il limite giornaliero del gruppo```\n👨‍👨‍👧‍👦*mgs* : ```Cambia i partecipanti minimi richiesti affinché il bot funzioni nel gruppo```\n🕛*rst* : ```Reimposta il gruppo giornaliero e credito utente torna a 0```
 }
